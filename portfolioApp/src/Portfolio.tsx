@@ -250,7 +250,7 @@ const Home: React.FC = () => (
                     </a>
                     <a href="https://www.linkedin.com/in/th%C3%A9o-chauviere-68b3002aa/" target="_blank">
                         <figure>
-                            <img src="../src/assets/LinkedIn.png" alt="LinkedIn"/>
+                            <img src="../public/LinkedIn2.png" alt="LinkedIn"/>
                             <figcaption>LinkedIn</figcaption>
                         </figure>
                     </a>
