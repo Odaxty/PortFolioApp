@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import About from './About.tsx';
 import Work from './Work';
 import './Portfolio.css';
+import linkedind from './assets/LinkedIn.png.svg';
 
 const Portfolio: React.FC = () => {
     const [page, setPage] = useState('home');
@@ -250,7 +251,7 @@ const Home: React.FC = () => (
                     </a>
                     <a href="https://www.linkedin.com/in/th%C3%A9o-chauviere-68b3002aa/" target="_blank">
                         <figure>
-                            <img src="../public/LinkedIn2.png" alt="LinkedIn"/>
+                            <img src={linkedind} className="LinkedIn" alt="LinkedIn"/>
                             <figcaption>LinkedIn</figcaption>
                         </figure>
                     </a>
