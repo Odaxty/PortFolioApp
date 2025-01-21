@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import About from './About.tsx';
 import Work from './Work';
 import './Portfolio.css';
-import linkedind from 'assets/LinkedIn.png';
+import linkedind from './assets/LinkedIn.png';
 
 const Portfolio: React.FC = () => {
     const [page, setPage] = useState('home');
