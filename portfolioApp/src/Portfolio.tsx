@@ -22,6 +22,7 @@ const Portfolio: React.FC = () => {
             </section>
             <footer>
                 <p>Contact: theo@example.com</p>
+                <p>Linkedind</p>
             </footer>
         </div>
     );
