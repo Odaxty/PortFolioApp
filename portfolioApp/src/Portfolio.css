@@ -78,9 +78,7 @@ nav ul.menudereoulant li a:active, nav ul.menudereoulant li a:hover{
     background-color: white;
 }
 /*fin du header */
-
-
-section.mains div.all{
+section.mains div.all {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -88,7 +86,8 @@ section.mains div.all{
     margin-right: auto;
     align-items: center;
     padding: 15px;
-    width: 650px;
+    width: 90%; /* Ajusté à une largeur relative */
+    max-width: 650px; /* Taille maximale */
     margin-top: 150px;
     margin-bottom: 50px;
     border: #000 2px solid;
@@ -371,5 +370,71 @@ button:hover .button-text {
 @keyframes pulse {
     to {
         opacity: 1;
+    }
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        height: auto;
+    }
+
+    nav img {
+        margin: 10px auto;
+    }
+
+    nav ul.menudereoulant {
+        flex-direction: column;
+        margin: 0 auto;
+    }
+
+    section.mains div.all {
+        max-width: 90%;
+    }
+
+    section.presentation {
+        max-width: 95%;
+    }
+    section.mains div.all {
+        flex-direction: column; /* Empile les éléments */
+        width: 95%; /* Réduit la largeur */
+        margin-top: 100px; /* Ajuste les marges */
+    }
+
+    section.mains div.all div.text {
+        margin-right: 0; /* Supprime l'espace latéral */
+    }
+
+    img.phototheo {
+        height: 200px; /* Réduit la taille de l'image */
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    nav ul.menudereoulant li a {
+        padding: 5px 10px;
+        font-size: 0.9rem;
+    }
+
+    section.conp div.div_img {
+        width: 100%;
+    }
+
+    section.contact {
+        padding: 15px;
+    }
+
+    section.contact div.contact {
+        margin: 20px;
+    }
+    section.mains div.all {
+        width: 100%; /* Prend toute la largeur */
+        padding: 10px; /* Réduit le padding */
+        margin-top: 80px;
+    }
+
+    img.phototheo {
+        height: 150px; /* Taille encore plus petite */
     }
 }

@@ -1,38 +1,40 @@
-
 *,::before,::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     height: 100%;
     width: 100%;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #fff;
 }
+
 html {
     --scroll-behavior: smooth;
     scroll-behavior: smooth;
 }
-/*debut de header */
-nav{
+
+/* Header */
+nav {
     height: 150px;
     margin: 10px;
     display: flex;
     justify-content: space-between;
     border-radius: 15px;
-    border-bottom:2px solid black ;
+    border-bottom: 2px solid black;
     box-shadow: gray 2px 2px 10px 0.1px;
 }
-nav img{
+
+nav img {
     width: 100px;
     height: 100px;
     margin-left: 100px;
     margin-top: 20px;
 }
 
-nav ul.menudereoulant{
+nav ul.menudereoulant {
     margin-right: 50px;
     margin-top: 60px;
     list-style: none;
@@ -42,47 +44,53 @@ nav ul.menudereoulant li {
     float: left;
     width: 150px;
 }
-nav ul.menudereoulant li a{
+
+nav ul.menudereoulant li a {
     text-decoration: none;
     color: #000;
     padding: 20px;
-    border-radius: 7px solid ;
+    border-radius: 7px solid;
 }
-nav ul.menudereoulant li a:link, ul.menudereoulant li a:visited{
+
+nav ul.menudereoulant li a:link, ul.menudereoulant li a:visited {
     display: block;
     color: #000;
     text-decoration: none;
     padding: 6px 10px;
     text-align: center;
-
 }
-nav ul.menudereoulant li a:active, nav ul.menudereoulant li a:hover{
+
+nav ul.menudereoulant li a:active, nav ul.menudereoulant li a:hover {
     background-color: beige;
     border-radius: 7px;
 }
-.sousmenu{
+
+.sousmenu {
     display: none;
 }
-.menudereoulant li:hover .sousmenu{
+
+.menudereoulant li:hover .sousmenu {
     display: block;
     position: relative;
     background-color: burlywood;
 }
 
-.sousmenu ul{
+.sousmenu ul {
     display: block;
     margin: 10px;
     list-style: none;
 }
-.sousmenu ul li{
+
+.sousmenu ul li {
     width: 150px;
     background-color: white;
 }
-/*fin du header */
-/*debut profil */
+
+/* Profile */
 body a {
     text-decoration: none;
 }
+
 div.profil {
     display: flex;
     flex-wrap: wrap;
@@ -99,17 +107,20 @@ div.profil {
     box-shadow: gray 2px 2px 10px 9px;
     justify-content: space-between;
 }
-div.profil div.g1t{
+
+div.profil div.g1t {
     padding: 5%;
 }
-div.profil div.g1t p{
-    padding:  0 20px;
+
+div.profil div.g1t p {
+    padding: 0 20px;
 }
 
-div.profil div.d1photo img{
+div.profil div.d1photo img {
     border-radius: 15px;
 }
 
+/* Passions */
 div.passions {
     display: flex;
     flex-wrap: wrap;
@@ -126,12 +137,16 @@ div.passions {
     box-shadow: gray 2px 2px 10px 9px;
     justify-content: space-between;
 }
-div.passions div.g2photo img{
+
+div.passions div.g2photo img {
     border-radius: 15px;
 }
-div.passions div.d2t p{
-    padding:  0 20px;
+
+div.passions div.d2t p {
+    padding: 0 20px;
 }
+
+/* Experience */
 div.parExp {
     display: flex;
     flex-wrap: wrap;
@@ -149,17 +164,24 @@ div.parExp {
     justify-content: space-between;
     padding: 5%;
 }
+
 div.parExp div.parcours {
     padding-top: 0;
 }
+
 div.parExp div.parcours p {
-    padding:  0 20px;
+    padding: 0 20px;
 }
+
 div.parExp div.experiences p {
-    padding:  0 20px;
+    padding: 0 20px;
 }
-img{height: 400px;}
-/* debut contac*/
+
+img {
+    height: 400px;
+}
+
+/* Contact */
 section.contact a {
     text-align: center;
     text-decoration: none;
@@ -170,20 +192,22 @@ section.contact {
     padding: 25px;
 }
 
-section.contact img{
+section.contact img {
     height: 100px;
 }
-section.contact img:hover{
-    transform:scale(1.25);
+
+section.contact img:hover {
+    transform: scale(1.25);
     transition: 0.4s;
 }
-section.contact h1{
+
+section.contact h1 {
     padding-left: 5%;
     margin: 20px;
     text-decoration: underline;
 }
 
-section.contact div.contact{
+section.contact div.contact {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -193,10 +217,85 @@ section.contact div.contact{
     align-items: center;
     margin: 50px;
 }
+
 figure {
     display: block;
     margin-block-start: 1em;
     margin-block-end: 1em;
     margin-inline-start: 40px;
     margin-inline-end: 40px;
+}
+
+/* Responsive styles */
+@media (max-width: 1200px) {
+    nav img {
+        width: 80px;
+        height: 80px;
+        margin-left: 50px;
+        margin-top: 10px;
+    }
+
+    nav ul.menudereoulant {
+        margin-right: 20px;
+        margin-top: 30px;
+    }
+
+    nav ul.menudereoulant li {
+        width: 120px;
+    }
+
+    div.profil, div.passions, div.parExp {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav img {
+        margin: 10px 0;
+    }
+
+    nav ul.menudereoulant {
+        margin: 0;
+        padding: 0;
+    }
+
+    nav ul.menudereoulant li {
+        width: 100%;
+        text-align: center;
+    }
+
+    div.profil, div.passions, div.parExp {
+        flex-direction: column;
+        padding: 5%;
+    }
+
+    div.profil div.g1t, div.passions div.d2t, div.parExp div.parcours, div.parExp div.experiences {
+        width: 100%;
+        padding: 10px;
+    }
+
+    img {
+        height: auto;
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    nav img {
+        width: 60px;
+        height: 60px;
+    }
+
+    nav ul.menudereoulant li {
+        padding: 10px 0;
+    }
+
+    div.profil div.g1t p, div.passions div.d2t p, div.parExp div.parcours p, div.parExp div.experiences p {
+        padding: 10px;
+    }
 }

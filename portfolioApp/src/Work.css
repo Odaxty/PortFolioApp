@@ -1,40 +1,45 @@
-
-*,::before,::after {
+/* Global styles */
+*, ::before, ::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-p{
-    line-height: 1.8;
-}
-body{
+
+body {
     height: 100%;
     width: 100%;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #fff;
 }
+
+p {
+    line-height: 1.8;
+}
+
 html {
     --scroll-behavior: smooth;
     scroll-behavior: smooth;
 }
-/*debut de header */
-nav{
+
+/* Header styles */
+nav {
     height: 150px;
     margin: 10px;
     display: flex;
     justify-content: space-between;
     border-radius: 15px;
-    border-bottom:2px solid black ;
+    border-bottom: 2px solid black;
     box-shadow: gray 2px 2px 10px 0.1px;
 }
-nav img{
+
+nav img {
     width: 100px;
     height: 100px;
     margin-left: 100px;
     margin-top: 20px;
 }
 
-nav ul.menudereoulant{
+nav ul.menudereoulant {
     margin-right: 50px;
     margin-top: 60px;
     list-style: none;
@@ -44,79 +49,82 @@ nav ul.menudereoulant li {
     float: left;
     width: 150px;
 }
-nav ul.menudereoulant li a{
+
+nav ul.menudereoulant li a {
     text-decoration: none;
     color: #000;
     padding: 20px;
-    border-radius: 7px solid ;
+    border-radius: 7px solid;
 }
-nav ul.menudereoulant li a:link, ul.menudereoulant li a:visited{
+
+nav ul.menudereoulant li a:link, ul.menudereoulant li a:visited {
     display: block;
     color: #000;
     text-decoration: none;
     padding: 6px 10px;
     text-align: center;
-
 }
-nav ul.menudereoulant li a:active, nav ul.menudereoulant li a:hover{
+
+nav ul.menudereoulant li a:active, nav ul.menudereoulant li a:hover {
     background-color: beige;
     border-radius: 7px;
 }
-.sousmenu{
+
+.sousmenu {
     display: none;
 }
-.menudereoulant li:hover .sousmenu{
+
+.menudereoulant li:hover .sousmenu {
     display: block;
     position: relative;
     background-color: burlywood;
 }
 
-.sousmenu ul{
+.sousmenu ul {
     display: block;
     margin: 10px;
     list-style: none;
 }
-.sousmenu ul li{
+
+.sousmenu ul li {
     width: 150px;
     background-color: white;
 }
-/*fin du header */
-/*debut projet jeux 2D  */
 
-h2.projet{
+/* Project styles */
+h2.projet {
     margin-left: 50px;
     text-decoration: underline;
     margin-top: 50px;
 }
 
- div.jeux{
+div.jeux, div.ongle, div.sql {
     width: 95%;
-    margin-left: auto;
-    margin-right: auto;
-    border: #000 2px solid;
+    margin: 2% auto;
+    border: 2px solid #000;
     border-radius: 5px;
     box-shadow: gray 2px 2px 10px 9px;
-    margin-top: 2%;
 }
 
- div.jeux div.p1{
+div.jeux div.p1, div.ongle div.p2, div.sql div.p3 {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     margin: 1%;
     justify-content: center;
 }
- div.jeux div.d1v{
+
+div.jeux div.d1v, div.ongle div.g2v, div.sql div.d3v {
     padding: 2px;
-    border: #000 2px solid;
+    border: 2px solid #000;
     border-radius: 5px;
     box-shadow: gray 2px 2px 10px 9px;
     align-items: center;
-
 }
- div.jeux div.g1t{
+
+div.jeux div.g1t, div.ongle div.d2t, div.sql div.g3t {
     padding: 2px;
-    border: #000 2px solid;
+    border: 2px solid #000;
     border-radius: 5px;
     box-shadow: gray 2px 2px 10px 9px;
     align-items: center;
@@ -124,156 +132,41 @@ h2.projet{
     margin-right: 0;
     width: 45%;
 }
- div.jeux div.g1t h1{
+
+div.jeux div.g1t h1, div.ongle div.d2t h1, div.sql div.g3t h1 {
     text-align: center;
 }
 
- div.jeux div.g1t p{
+div.jeux div.g1t p, div.ongle div.d2t p, div.sql div.g3t p {
     padding: 15px;
+}
 
+div.jeux div.g1t div.b1 h4, div.ongle div.d2t div.b2 h4, div.sql div.g3t div.b3 h4 {
+    padding: 0 15px;
 }
- div.jeux div.g1t div.b1 h4{
-    padding: 0 15px ;
-}
- div.jeux div.g1t div.b1 a{
+
+div.jeux div.g1t div.b1 a, div.ongle div.d2t div.b2 a, div.sql div.g3t div.b3 a {
     color: blue;
     padding: 0 15px;
 }
- div.jeux a {
+
+div.jeux a, div.ongle a, div.sql a {
     text-decoration: none;
     color: #000;
 }
- div.jeux video{
+
+div.jeux video, div.ongle video, div.sql video {
     padding: 10px;
     max-height: 525px;
 }
 
-@media (max-width:900px) {
-     div.jeux video{
+@media (max-width: 900px) {
+    div.jeux video, div.ongle video, div.sql video {
         max-width: 850px;
     }
-    
-}
-/*fin projet jeux 2D  */
-/*debut projet site ongle  */
- div.ongle{
-    width: 95%;
-    margin-left: auto;
-    margin-right: auto;
-    border: #000 2px solid;
-    border-radius: 5px;
-    box-shadow: gray 2px 2px 10px 9px;
-    margin-top: 2%;
-}
-div.ongle div.p2{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    margin: 1%;
-    justify-content: center;
-}
-div.ongle div.g2v{
-    padding: 2px;
-    border: #000 2px solid;
-    border-radius: 5px;
-    box-shadow: gray 2px 2px 10px 9px;
-    margin-right: 0;
-}
-div.ongle div.d2t{
-    padding: 2px;
-    border: #000 2px solid;
-    border-radius: 5px;
-    box-shadow: gray 2px 2px 10px 9px;
-    width: 45%;
-    margin: 2%;
-}
- div.ongle div.d2t h1{
-    text-align: center;
 }
 
- div.ongle div.d2t p{
-    padding: 15px;
-}
- div.ongle div.d2t div.b2 h4{
-    padding: 10px 15px 10px 15px;
-}
- div.ongle div.d2t div.b2 a{
-    color: blue;
-    padding: 0 15px;
-}
-
-
- div.ongle a {
-    text-decoration: none;
-    color: #000;
-}
- div.ongle video{
-    padding: 10px;
-    max-height: 510px;
-}
-/*fin projet site ongle  */
-/*debut projet sql  */
- div.sql{
-    width: 95%;
-    margin-left: auto;
-    margin-right: auto;
-    border: #000 2px solid;
-    border-radius: 5px;
-    box-shadow: gray 2px 2px 10px 9px;
-    margin-top: 2%;
-}
-
- div.sql div.p3{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    margin: 1%;
-    justify-content: center;
-}
- div.sql div.d3v{
-    padding: 2px;
-    border: #000 2px solid;
-    border-radius: 5px;
-    box-shadow: gray 2px 2px 10px 9px;
-    align-items: center;
-}
- div.sql div.g3t{
-    padding: 2px;
-    border: #000 2px solid;
-    border-radius: 5px;
-    box-shadow: gray 2px 2px 10px 9px;
-    align-items: center;
-    margin: 2%;
-    margin-right: 0;
-    width: 45%;
-}
- div.sql div.g3t h1{
-    text-align: center;
-}
-
- div.sql div.g3t p{
-    padding: 15px;
-
-}
- div.sql div.g3t div.b3 h4{
-    padding: 0 15px ;
-}
- div.sql div.g3t div.b3 a{
-    color: blue;
-    padding: 0 15px;
-}
- div.sql a {
-    text-decoration: none;
-    color: #000;
-}
- div.sql video{
-    padding: 10px;
-    max-height: 525px;
-}
-/*fin projet sql  */
-div.a{
-    margin: 2%;
-}
+/* Contact styles */
 .contact a {
     text-align: center;
     text-decoration: none;
@@ -284,20 +177,22 @@ div.a{
     padding: 25px;
 }
 
-.contact img{
+.contact img {
     height: 100px;
 }
-.contact img:hover{
-    transform:scale(1.25);
+
+.contact img:hover {
+    transform: scale(1.25);
     transition: 0.4s;
 }
-.contact h1{
+
+.contact h1 {
     padding-left: 5%;
     margin: 20px;
     text-decoration: underline;
 }
 
-.contact div.contact{
+.contact div.contact {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -307,6 +202,7 @@ div.a{
     align-items: center;
     margin: 50px;
 }
+
 figure {
     display: block;
     margin-block-start: 1em;
@@ -314,7 +210,8 @@ figure {
     margin-inline-start: 40px;
     margin-inline-end: 40px;
 }
-/*fleche*/
+
+/* Chevron styles */
 .container2 {
     position: relative;
     width: 24px;
@@ -342,8 +239,7 @@ figure {
     animation: move 3s ease-out 2s infinite;
 }
 
-.chevron:before,
-.chevron:after {
+.chevron:before, .chevron:after {
     content: ' ';
     position: absolute;
     top: 0;
@@ -366,7 +262,6 @@ figure {
 @keyframes move {
     25% {
         opacity: 1;
-
     }
     33% {
         opacity: 1;
@@ -381,8 +276,80 @@ figure {
         transform: translateY(55px) scale3d(0.5, 0.5, 0.5);
     }
 }
+
 @keyframes pulse {
     to {
         opacity: 1;
+    }
+}
+
+/* Responsive styles */
+@media (max-width: 1200px) {
+    nav img {
+        width: 80px;
+        height: 80px;
+        margin-left: 50px;
+        margin-top: 10px;
+    }
+
+    nav ul.menudereoulant {
+        margin-right: 20px;
+        margin-top: 30px;
+    }
+
+    nav ul.menudereoulant li {
+        width: 120px;
+    }
+
+    div.jeux div.g1t, div.ongle div.d2t, div.sql div.g3t {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav img {
+        margin: 10px 0;
+    }
+
+    nav ul.menudereoulant {
+        margin: 0;
+        padding: 0;
+    }
+
+    nav ul.menudereoulant li {
+        width: 100%;
+        text-align: center;
+    }
+
+    div.jeux div.p1, div.ongle div.p2, div.sql div.p3 {
+        flex-direction: column;
+    }
+
+    div.jeux video, div.ongle video, div.sql video {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    nav img {
+        width: 60px;
+        height: 60px;
+    }
+
+    nav ul.menudereoulant li {
+        padding: 10px 0;
+    }
+
+    div.jeux div.g1t, div.ongle div.d2t, div.sql div.g3t {
+        padding: 10px;
+    }
+
+    div.jeux div.g1t p, div.ongle div.d2t p, div.sql div.g3t p {
+        padding: 10px;
     }
 }
