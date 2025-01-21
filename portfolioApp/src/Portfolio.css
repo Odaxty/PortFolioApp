@@ -437,4 +437,8 @@ button:hover .button-text {
     img.phototheo {
         height: 150px; /* Taille encore plus petite */
     }
+    img {
+        height: auto;
+        width: 100%;
+    }
 }

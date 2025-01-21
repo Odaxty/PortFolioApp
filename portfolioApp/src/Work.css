@@ -352,4 +352,8 @@ figure {
     div.jeux div.g1t p, div.ongle div.d2t p, div.sql div.g3t p {
         padding: 10px;
     }
+    img {
+        height: auto;
+        width: 100%;
+    }
 }

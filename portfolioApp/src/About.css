@@ -298,4 +298,8 @@ figure {
     div.profil div.g1t p, div.passions div.d2t p, div.parExp div.parcours p, div.parExp div.experiences p {
         padding: 10px;
     }
+    img {
+        height: auto;
+        width: 100%;
+    }
 }
