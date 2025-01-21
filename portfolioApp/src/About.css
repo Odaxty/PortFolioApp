@@ -1,0 +1,202 @@
+
+*,::before,::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100%;
+    width: 100%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #fff;
+}
+html {
+    --scroll-behavior: smooth;
+    scroll-behavior: smooth;
+}
+/*debut de header */
+nav{
+    height: 150px;
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 15px;
+    border-bottom:2px solid black ;
+    box-shadow: gray 2px 2px 10px 0.1px;
+}
+nav img{
+    width: 100px;
+    height: 100px;
+    margin-left: 100px;
+    margin-top: 20px;
+}
+
+nav ul.menudereoulant{
+    margin-right: 50px;
+    margin-top: 60px;
+    list-style: none;
+}
+
+nav ul.menudereoulant li {
+    float: left;
+    width: 150px;
+}
+nav ul.menudereoulant li a{
+    text-decoration: none;
+    color: #000;
+    padding: 20px;
+    border-radius: 7px solid ;
+}
+nav ul.menudereoulant li a:link, ul.menudereoulant li a:visited{
+    display: block;
+    color: #000;
+    text-decoration: none;
+    padding: 6px 10px;
+    text-align: center;
+
+}
+nav ul.menudereoulant li a:active, nav ul.menudereoulant li a:hover{
+    background-color: beige;
+    border-radius: 7px;
+}
+.sousmenu{
+    display: none;
+}
+.menudereoulant li:hover .sousmenu{
+    display: block;
+    position: relative;
+    background-color: burlywood;
+}
+
+.sousmenu ul{
+    display: block;
+    margin: 10px;
+    list-style: none;
+}
+.sousmenu ul li{
+    width: 150px;
+    background-color: white;
+}
+/*fin du header */
+/*debut profil */
+body a {
+    text-decoration: none;
+}
+div.profil {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2%;
+    width: 1300px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    align-items: center;
+    border: #000 2px solid;
+    border-radius: 5px;
+    box-shadow: gray 2px 2px 10px 9px;
+    justify-content: space-between;
+}
+div.profil div.g1t{
+    padding: 5%;
+}
+div.profil div.g1t p{
+    padding:  0 20px;
+}
+
+div.profil div.d1photo img{
+    border-radius: 15px;
+}
+
+div.passions {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2%;
+    width: 1300px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    align-items: center;
+    border: #000 2px solid;
+    border-radius: 5px;
+    box-shadow: gray 2px 2px 10px 9px;
+    justify-content: space-between;
+}
+div.passions div.g2photo img{
+    border-radius: 15px;
+}
+div.passions div.d2t p{
+    padding:  0 20px;
+}
+div.parExp {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
+    width: 1300px;
+    margin-top: 140px;
+    margin-bottom: 50px;
+    align-items: center;
+    border: #000 2px solid;
+    border-radius: 5px;
+    box-shadow: gray 2px 2px 10px 9px;
+    justify-content: space-between;
+    padding: 5%;
+}
+div.parExp div.parcours {
+    padding-top: 0;
+}
+div.parExp div.parcours p {
+    padding:  0 20px;
+}
+div.parExp div.experiences p {
+    padding:  0 20px;
+}
+img{height: 400px;}
+/* debut contac*/
+section.contact a {
+    text-align: center;
+    text-decoration: none;
+    color: #000;
+}
+
+section.contact {
+    padding: 25px;
+}
+
+section.contact img{
+    height: 100px;
+}
+section.contact img:hover{
+    transform:scale(1.25);
+    transition: 0.4s;
+}
+section.contact h1{
+    padding-left: 5%;
+    margin: 20px;
+    text-decoration: underline;
+}
+
+section.contact div.contact{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    box-shadow: #0000003d 0 3px 8px;
+    border-radius: 12px;
+    align-items: center;
+    margin: 50px;
+}
+figure {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 40px;
+    margin-inline-end: 40px;
+}

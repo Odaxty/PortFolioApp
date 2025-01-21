@@ -4,7 +4,9 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+p{
+    line-height: 1.8;
+}
 body{
     height: 100%;
     width: 100%;
@@ -24,7 +26,6 @@ nav{
     border-radius: 15px;
     border-bottom:2px solid black ;
     box-shadow: gray 2px 2px 10px 0.1px;
-
 }
 nav img{
     width: 100px;
@@ -55,6 +56,7 @@ nav ul.menudereoulant li a:link, ul.menudereoulant li a:visited{
     text-decoration: none;
     padding: 6px 10px;
     text-align: center;
+
 }
 nav ul.menudereoulant li a:active, nav ul.menudereoulant li a:hover{
     background-color: beige;
@@ -68,6 +70,7 @@ nav ul.menudereoulant li a:active, nav ul.menudereoulant li a:hover{
     position: relative;
     background-color: burlywood;
 }
+
 .sousmenu ul{
     display: block;
     margin: 10px;
@@ -78,140 +81,223 @@ nav ul.menudereoulant li a:active, nav ul.menudereoulant li a:hover{
     background-color: white;
 }
 /*fin du header */
+/*debut projet jeux 2D  */
 
-
-section.mains div.all{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    margin-left: auto;
-    margin-right: auto;
-    align-items: center;
-    padding: 15px;
-    width: 650px;
-    margin-top: 150px;
-    margin-bottom: 50px;
-    border: #000 2px solid;
-    border-radius: 5px;
-    box-shadow: gray 2px 2px 10px 9px;
-}
-section.mains div.all div.text{
-    margin-right: 100px;
-}
-
-img.phototheo{
-    height: 300px;
-    border-radius: 20%;
-}
-
-section.presentation{
-    margin-bottom: 30px;
-    text-align: center;
-    border: #000 2px solid;
-    border-radius: 5px;
-    box-shadow: gray 2px 2px 10px 9px;
-    max-width: 50%;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 20px;
-}
-section.conp {
-    background-color: #191919;
-    color: #fff;
-    padding: 30px;
-}
-
-section.conp h2 {
-    display: block;
-    padding-left: 5%;
-    font-weight: bold;
+h2.projet{
+    margin-left: 50px;
     text-decoration: underline;
-}
-section.conp h3 {
-    display: block;
-    text-align: center;
-    margin: 20px;
+    margin-top: 50px;
 }
 
-section.conp div.comp_div {
-    display: flex;
-    flex-direction: column;
+ div.jeux{
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    border: #000 2px solid;
+    border-radius: 5px;
+    box-shadow: gray 2px 2px 10px 9px;
+    margin-top: 2%;
 }
 
-section.conp figcaption {
-    text-align: center;
-}
-section.conp img {
-    height: 100px;
-    transition: all 0.4s ease;
-}
-section.conp img:hover {
-    transform:scale(1.25);
-    transition: 0.4s;
-}
-section.conp div.div_img{
+ div.jeux div.p1{
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
-    width: 70vw;
-    align-self: center;
+    flex-direction: row;
+    margin: 1%;
     justify-content: center;
-    border-radius: 15px;
-    background-color: #202021;
-    box-shadow: #512F2F 2px 2px 10px 9px;
-    padding: 20px;
+}
+ div.jeux div.d1v{
+    padding: 2px;
+    border: #000 2px solid;
+    border-radius: 5px;
+    box-shadow: gray 2px 2px 10px 9px;
+    align-items: center;
+
+}
+ div.jeux div.g1t{
+    padding: 2px;
+    border: #000 2px solid;
+    border-radius: 5px;
+    box-shadow: gray 2px 2px 10px 9px;
+    align-items: center;
+    margin: 2%;
+    margin-right: 0;
+    width: 45%;
+}
+ div.jeux div.g1t h1{
+    text-align: center;
 }
 
-figure {
-    display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 40px;
-    margin-inline-end: 40px;
+ div.jeux div.g1t p{
+    padding: 15px;
+
 }
-figcaption {
-    display: block;
-    padding-top: 10px;
+ div.jeux div.g1t div.b1 h4{
+    padding: 0 15px ;
 }
-section.conp a {
+ div.jeux div.g1t div.b1 a{
+    color: blue;
+    padding: 0 15px;
+}
+ div.jeux a {
     text-decoration: none;
-    color: #fff;
+    color: #000;
+}
+ div.jeux video{
+    padding: 10px;
+    max-height: 525px;
 }
 
-#langue img{
-    border-radius: 15px;
-    width: 150px;
+@media (max-width:900px) {
+     div.jeux video{
+        max-width: 850px;
+    }
+    
 }
-#langue p{
-    font-size: small;
-    padding-top: 10px;
+/*fin projet jeux 2D  */
+/*debut projet site ongle  */
+ div.ongle{
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    border: #000 2px solid;
+    border-radius: 5px;
+    box-shadow: gray 2px 2px 10px 9px;
+    margin-top: 2%;
 }
-section.contact a {
+div.ongle div.p2{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 1%;
+    justify-content: center;
+}
+div.ongle div.g2v{
+    padding: 2px;
+    border: #000 2px solid;
+    border-radius: 5px;
+    box-shadow: gray 2px 2px 10px 9px;
+    margin-right: 0;
+}
+div.ongle div.d2t{
+    padding: 2px;
+    border: #000 2px solid;
+    border-radius: 5px;
+    box-shadow: gray 2px 2px 10px 9px;
+    width: 45%;
+    margin: 2%;
+}
+ div.ongle div.d2t h1{
+    text-align: center;
+}
+
+ div.ongle div.d2t p{
+    padding: 15px;
+}
+ div.ongle div.d2t div.b2 h4{
+    padding: 10px 15px 10px 15px;
+}
+ div.ongle div.d2t div.b2 a{
+    color: blue;
+    padding: 0 15px;
+}
+
+
+ div.ongle a {
+    text-decoration: none;
+    color: #000;
+}
+ div.ongle video{
+    padding: 10px;
+    max-height: 510px;
+}
+/*fin projet site ongle  */
+/*debut projet sql  */
+ div.sql{
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    border: #000 2px solid;
+    border-radius: 5px;
+    box-shadow: gray 2px 2px 10px 9px;
+    margin-top: 2%;
+}
+
+ div.sql div.p3{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 1%;
+    justify-content: center;
+}
+ div.sql div.d3v{
+    padding: 2px;
+    border: #000 2px solid;
+    border-radius: 5px;
+    box-shadow: gray 2px 2px 10px 9px;
+    align-items: center;
+}
+ div.sql div.g3t{
+    padding: 2px;
+    border: #000 2px solid;
+    border-radius: 5px;
+    box-shadow: gray 2px 2px 10px 9px;
+    align-items: center;
+    margin: 2%;
+    margin-right: 0;
+    width: 45%;
+}
+ div.sql div.g3t h1{
+    text-align: center;
+}
+
+ div.sql div.g3t p{
+    padding: 15px;
+
+}
+ div.sql div.g3t div.b3 h4{
+    padding: 0 15px ;
+}
+ div.sql div.g3t div.b3 a{
+    color: blue;
+    padding: 0 15px;
+}
+ div.sql a {
+    text-decoration: none;
+    color: #000;
+}
+ div.sql video{
+    padding: 10px;
+    max-height: 525px;
+}
+/*fin projet sql  */
+div.a{
+    margin: 2%;
+}
+.contact a {
     text-align: center;
     text-decoration: none;
     color: #000;
 }
 
-section.contact {
+.contact {
     padding: 25px;
 }
-div.contact {
-    background: white;
-}
-section.contact img{
+
+.contact img{
     height: 100px;
 }
-section.contact img:hover{
+.contact img:hover{
     transform:scale(1.25);
     transition: 0.4s;
 }
-section.contact h1{
+.contact h1{
     padding-left: 5%;
     margin: 20px;
     text-decoration: underline;
 }
 
-section.contact div.contact{
+.contact div.contact{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -221,95 +307,22 @@ section.contact div.contact{
     align-items: center;
     margin: 50px;
 }
-/* debut du bouton */
-button {
-    position: relative;
-    cursor: pointer;
-    outline: none;
-    border: 0;
-    vertical-align: middle;
-    text-decoration: none;
-    background: transparent;
-    padding: 0;
-    margin-bottom: 10px;
-}
-#container {
-    align-self: center;
-    justify-self: center;
-}
-button.learn-more {
-    width: 15rem;
-    height: auto;
-}
-button.learn-more .circle {
-    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
-    position: relative;
+figure {
     display: block;
-    margin: 0;
-    width: 3rem;
-    height: 3rem;
-    background: #282936;
-    border-radius: 1.625rem;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 40px;
+    margin-inline-end: 40px;
 }
-button.learn-more .circle .icon {
-    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    margin: auto;
-    background: #fff;
-}
-button.learn-more .circle .icon.arrow {
-    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
-    left: 0.625rem;
-    width: 1.125rem;
-    height: 0.125rem;
-    background: none;
-}
-button.learn-more .circle .icon.arrow::before {
-    position: absolute;
-    content: "";
-    top: -0.25rem;
-    right: 0.0625rem;
-    width: 0.625rem;
-    height: 0.625rem;
-    border-top: 0.125rem solid #fff;
-    border-right: 0.125rem solid #fff;
-    transform: rotate(45deg);
-}
-button.learn-more .button-text {
-    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    padding: 0.75rem 0;
-    margin: 0 0 0 1.85rem;
-    color: #282936;
-    font-weight: 700;
-    line-height: 1.6;
-    text-align: center;
-    text-transform: uppercase;
-}
-button:hover .circle {
-    width: 100%;
-}
-button:hover .circle .icon.arrow {
-    background: #fff;
-    transform: translate(1rem, 0);
-}
-button:hover .button-text {
-    color: #fff;
-}
-
-/* fleche */
+/*fleche*/
 .container2 {
     position: relative;
     width: 24px;
     height: 24px;
     margin-left: auto;
     margin-right: auto;
+    padding-bottom: 4%;
+    padding-top: 2%;
 }
 
 .chevron {
