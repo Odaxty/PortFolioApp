@@ -3,6 +3,27 @@ import About from './About.tsx';
 import Work from './Work';
 import './Portfolio.css';
 import linkedind from './assets/LinkedIn.png';
+import logoTheo from './assets/Théo2.png';
+import cv from './assets/CV Alternance CHAUVIERE Théo.pdf';
+import lettreMotivation from '../src/assets/Lettre_de_Motivation.pdf';
+import photoTheo from '../src/assets/theo.png';
+import html from '../src/assets/assets-competence/html.png';
+import css from '../src/assets/assets-competence/css.png';
+import javascript from '../src/assets/assets-competence/JavaScript.png';
+import python from '../src/assets/assets-competence/python.png';
+import sql from '../src/assets/assets-competence/sql.png';
+import git from '../src/assets/assets-competence/git.png';
+import java from '../src/assets/assets-competence/java.png';
+import golang from '../src/assets/assets-competence/Go.png';
+import canva from '../src/assets/assets-competence/canva.png';
+import photoshop from '../src/assets/photoshop.png';
+import france from '../src/assets/FR.png';
+import uk from '../src/assets/UK.png';
+import spain from '../src/assets/ES.png';
+import windows from '../src/assets/windows.png';
+import linux from '../src/assets/linux.png';
+import ios from '../src/assets/ios.png';
+import mail from '../src/assets/mail.png';
 
 const Portfolio: React.FC = () => {
     const [page, setPage] = useState('home');
@@ -24,7 +45,7 @@ const Portfolio: React.FC = () => {
         <div className="portfolio">
             <header>
                 <nav>
-                    <a href="#" onClick={() => setPage('home')}><img src="../src/assets/Théo2.png" alt="logo théo"/></a>
+                    <a href="#" onClick={() => setPage('home')}><img src={logoTheo} alt="logo théo"/></a>
                     <ul className="menudereoulant">
                         <li><a href="#" onClick={() => setPage('home')}>Accueil</a></li>
                         <li><a href="#" onClick={() => setPage('work')}>Projet</a></li>
@@ -51,7 +72,7 @@ const Home: React.FC = () => (
                     <br/>
                     <div id="container">
                         <button className="learn-more">
-                            <a href="../src/assets/CV Alternance CHAUVIERE Théo.pdf" target="_blank">
+                            <a href={cv} target="_blank">
                     <span className="circle" aria-hidden="true">
                     <span className="icon arrow"></span>
                     </span>
@@ -61,7 +82,7 @@ const Home: React.FC = () => (
                     </div>
                     <div id="container">
                         <button className="learn-more">
-                            <a href="../src/assets/Lettre_de_Motivation.pdf" target="_blank">
+                            <a href={lettreMotivation} target="_blank">
                     <span className="circle" aria-hidden="true">
                     <span className="icon arrow"></span>
                     </span>
@@ -72,7 +93,7 @@ const Home: React.FC = () => (
                     <br/>
                 </div>
                 <div className="img">
-                    <img src="../src/assets/IMG_4215.PNG" alt="photo_théo" className="phototheo"/>
+                    <img src={photoTheo} alt="photo_théo" className="phototheo"/>
                 </div>
             </div>
 
@@ -109,19 +130,19 @@ const Home: React.FC = () => (
                 <div className="div_img">
                     <figure>
                         <a href="https://fr.wikipedia.org/wiki/Hypertext_Markup_Language" target="_blank">
-                            <img src="../src/assets/assets-competence/html.png" alt=""/>
+                            <img src={html} alt=""/>
                             <figcaption>HTML</figcaption>
                         </a>
                     </figure>
                     <figure>
                         <a href="https://fr.wikipedia.org/wiki/Feuilles_de_style_en_cascade" target="_blank">
-                            <img src="../src/assets/assets-competence/css.png" alt=""/>
+                            <img src={css} alt=""/>
                             <figcaption>CSS</figcaption>
                         </a>
                     </figure>
                     <figure>
                         <a href="https://fr.wikipedia.org/wiki/JavaScript" target="_blank">
-                            <img src="../src/assets/assets-competence/JavaScript.png" alt=""/>
+                            <img src={javascript} alt=""/>
                             <figcaption>JavaScript</figcaption>
                         </a>
                     </figure>
@@ -133,31 +154,31 @@ const Home: React.FC = () => (
                 <div className="div_img">
                     <figure>
                         <a href="https://www.python.org/" target="_blank">
-                            <img src="../src/assets/assets-competence/python.png" alt=""/>
+                            <img src={python} alt=""/>
                             <figcaption>Python</figcaption>
                         </a>
                     </figure>
                     <figure>
                         <a href="https://fr.wikipedia.org/wiki/Structured_Query_Language" target="_blank">
-                            <img src="../src/assets/assets-competence/sql.png" alt=""/>
+                            <img src={sql} alt=""/>
                             <figcaption>SQL</figcaption>
                         </a>
                     </figure>
                     <figure>
                         <a href="https://git-scm.com/" target="_blank">
-                            <img src="../src/assets/assets-competence/git.png" alt=""/>
+                            <img src={git} alt=""/>
                             <figcaption>Git</figcaption>
                         </a>
                     </figure>
                     <figure>
                         <a href="https://www.java.com/fr/" target="_blank">
-                            <img src="../src/assets/assets-competence/java.png" alt=""/>
+                            <img src={java} alt=""/>
                             <figcaption>Java</figcaption>
                         </a>
                     </figure>
                     <figure>
                         <a href="https://go.dev/" target="_blank">
-                            <img src="../src/assets/assets-competence/Go.png" alt=""/>
+                            <img src={golang} alt=""/>
                             <figcaption>Golang</figcaption>
                         </a>
                     </figure>
@@ -168,13 +189,13 @@ const Home: React.FC = () => (
                 <div className="div_img">
                     <figure>
                         <a href="https://www.canva.com/" target="_blank">
-                            <img src="../src/assets/assets-competence/canva.png" alt=""/>
+                            <img src={canva} alt=""/>
                             <figcaption>Canva</figcaption>
                         </a>
                     </figure>
                     <figure>
                         <a href="https://fr.wikipedia.org/wiki/Adobe_Photoshop" target="_blank">
-                            <img src="../src/assets/photoshop.png" alt=""/>
+                            <img src={photoshop} alt=""/>
                             <figcaption>PhotoShop</figcaption>
                         </a>
                     </figure>
@@ -185,7 +206,7 @@ const Home: React.FC = () => (
                 <div className="div_img">
                     <figure>
                         <a href="https://fr.wikipedia.org/wiki/France" target="_blank">
-                            <img src="../src/assets/FR.png" alt=""/>
+                            <img src={france} alt=""/>
                             <figcaption>
                                 France
                                 <br/>
@@ -195,7 +216,7 @@ const Home: React.FC = () => (
                     </figure>
                     <figure>
                         <a href="https://fr.wikipedia.org/wiki/Anglais" target="_blank">
-                            <img src="../src/assets/UK.png" alt=""/>
+                            <img src={uk} alt=""/>
                             <figcaption>
                                 Anglais
                                 <br/>
@@ -205,7 +226,7 @@ const Home: React.FC = () => (
                     </figure>
                     <figure>
                         <a href="https://fr.wikipedia.org/wiki/Espagnol" target="_blank">
-                            <img src="../src/assets/ES.png" alt=""/>
+                            <img src={spain} alt=""/>
                             <figcaption>
                                 Espagnol
                                 <br/>
@@ -220,19 +241,19 @@ const Home: React.FC = () => (
                 <div className="div_img">
                     <figure>
                         <a href="https://www.microsoft.com/fr-fr/windows?r=1" target="_blank">
-                            <img src="../src/assets/windows.png" alt=""/>
+                            <img src={windows} alt=""/>
                             <figcaption>Windows</figcaption>
                         </a>
                     </figure>
                     <figure>
                         <a href="https://www.linux.org/" target="_blank">
-                            <img src="../src/assets/linux.png" alt=""/>
+                            <img src={linux} alt=""/>
                             <figcaption>Linux</figcaption>
                         </a>
                     </figure>
                     <figure>
                         <a href="https://www.apple.com/fr/ios/ios-17/" target="_blank">
-                            <img src="../src/assets/ios.png" alt=""/>
+                            <img src={ios} alt=""/>
                             <figcaption>IOS</figcaption>
                         </a>
                     </figure>
@@ -245,7 +266,7 @@ const Home: React.FC = () => (
                 <div className="contact">
                     <a href="mailto:theo.chauviere85@gmail.com">
                         <figure>
-                            <img src="../src/assets/mail.png" alt=""/>
+                            <img src={mail} alt=""/>
                             <figcaption>theo.chauviere85@gmail.com</figcaption>
                         </figure>
                     </a>

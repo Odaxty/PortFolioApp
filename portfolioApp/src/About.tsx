@@ -1,5 +1,10 @@
 import React from 'react';
 import './About.css';
+import theoImage from './assets/theo.png';
+import photoVelo from './assets/photo_velo.jpg';
+import mail from './assets/mail.png';
+import linkedind from './assets/LinkedIn.png';
+
 
 const About: React.FC = () => {
     return (
@@ -17,12 +22,12 @@ const About: React.FC = () => {
                     </p>
                 </div>
                 <div className="d1photo">
-                    <img src="../src/assets/IMG_4215.PNG" alt=""/>
+                    <img src={theoImage} alt="Théo Chauviere"/>
                 </div>
             </div>
             <div className="passions">
                 <div className="g2photo">
-                    <img src="../src/assets/photo_velo.jpg" alt=""/>
+                    <img src={photoVelo} alt="Vélo"/>
                 </div>
                 <div className="d2t">
                     <h2>Mes Passions :</h2>
@@ -72,13 +77,13 @@ const About: React.FC = () => {
                 <div className="contact">
                     <a href="mailto:theo.chauviere85@gmail.com">
                         <figure>
-                            <img src="../src/assets/mail.png" alt=""/>
+                            <img src={mail} alt="Mail"/>
                             <figcaption>theo.chauviere85@gmail.com</figcaption>
                         </figure>
                     </a>
                     <a href="https://www.linkedin.com/in/th%C3%A9o-chauviere-68b3002aa/" target="_blank">
                         <figure>
-                            <img src="../src/assets/LinkedIn.png" alt="LinkedIn"/>
+                            <img src={linkedind} alt="LinkedIn"/>
                             <figcaption>LinkedIn</figcaption>
                         </figure>
                     </a>

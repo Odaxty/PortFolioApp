@@ -1,6 +1,11 @@
 // portfolioApp/src/Work.tsx
 import React from 'react';
 import './Work.css';
+import videoJeux from './assets/vidéo-jeux.mp4';
+import ongleVideo from './assets/ongle.mp4';
+import sqlVideo from './assets/Projet SQL1/sql_video.mp4';
+import mail from './assets/mail.png';
+import linkedind from './assets/LinkedIn.png';
 
 const Work: React.FC = () => {
     return (
@@ -10,7 +15,7 @@ const Work: React.FC = () => {
                 <div className="p1">
                     <div className="d1v">
                         <video autoPlay loop muted>
-                            <source src="../src/assets/vidéo-jeux.mp4" type="video/mp4"/>
+                            <source src={videoJeux} type="video/mp4"/>
                             " Votre navigateur ne supporte pas la vidéo."
                         </video>
                     </div>
@@ -96,7 +101,7 @@ const Work: React.FC = () => {
                     </div>
                     <div className="g2v">
                         <video autoPlay loop muted>
-                            <source src="../src/assets/ongle.mp4" type="video/mp4"/>
+                            <source src={ongleVideo} type="video/mp4"/>
                             " Votre navigateur ne supporte pas la vidéo."
                         </video>
                     </div>
@@ -115,7 +120,7 @@ const Work: React.FC = () => {
                 <div className="p3">
                     <div className="d3v">
                         <video autoPlay loop muted>
-                            <source src="../src/assets/Projet SQL1/sql_video.mp4" type="video/mp4"/>
+                            <source src={sqlVideo} type="video/mp4"/>
                             " Votre navigateur ne supporte pas la vidéo."
                         </video>
                     </div>
@@ -162,13 +167,13 @@ const Work: React.FC = () => {
                 <div className="contact">
                     <a href="mailto:theo.chauviere85@gmail.com">
                         <figure>
-                            <img src="../src/assets/mail.png" alt=""/>
+                            <img src={mail} alt=""/>
                             <figcaption>theo.chauviere85@gmail.com</figcaption>
                         </figure>
                     </a>
                     <a href="https://www.linkedin.com/in/th%C3%A9o-chauviere-68b3002aa/" target="_blank">
                         <figure>
-                            <img src="../src/assets/LinkedIn.png" alt="LinkedIn"/>
+                            <img src={linkedind} alt="LinkedIn"/>
                             <figcaption>LinkedIn</figcaption>
                         </figure>
                     </a>
